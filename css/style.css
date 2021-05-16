@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* selektor znacznika */
+
+h2 {
+    color: blue;
+    font-size: 2.3rem;
+}
+
+p {
+    color: darkgreen;
+}
+
+
+/* selektor id */
+
+#main-section {
+    background-color: cornflowerblue;
+}
+
+
+/* selektor klasy */
+
+.first-paragraph {
+    color: crimson
+}
+
+
+/* selektory złożone */
+
+li,
+p,
+footer {
+    text-decoration: underline;
+}
+
+section>h2 {
+    background-color: darkmagenta;
+}
+
+section a {
+    font-size: 6rem;
+}
+
+h2+p {
+    line-height: 6rem;
+}
+
+h2~p {
+    line-height: 6rem;
+}
+
+
+/* selektory pseudoelementów */
+
+h2::before {
+    content: "*** ";
+    color: brown;
+    background-color: coral;
+}
+
+h2::after {
+    content: " ###";
+    color: brown;
+    background-color: coral;
+}
+
+
+/* selektory  pseudoklas*/
+
+.link {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.link:hover {
+    color: chartreuse;
+}
+
+
+/* .link:visited {
+color: red;
+} */
+
+input:focus {
+    background-color: salmon;
+}
+
+.li-pseudoklasy {
+    text-decoration: none;
+}
+
+.li-pseudoklasy:first-child {
+    font-size: 10px;
+}
+
+.li-pseudoklasy:last-child {
+    font-size: 26px;
+}
+
+.li-pseudoklasy:nth-child(3) {
+    color: rgb(145, 44, 31);
+}
+
+.li-pseudoklasy:nth-child(odd) {
+    background-color: rgb(156, 134, 131);
+}
+
+.li-pseudoklasy:nth-child(even) {
+    background-color: rgb(122, 170, 115);
+}
